@@ -1,0 +1,12 @@
+{
+  "name": "Mercadillo de Muchavista",
+  "short_name": "Muchavista",
+  "description": "Tu Domingo Perfecto en Muchavista - Rastro, Gastronomía y Tesoros",
+  "theme_color": "#1E3A8A",
+  "background_color": "#F9F8F6",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": []
+}
