@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="min-h-screen bg-[#F9F8F6]">
       <Hero />
-      <MapSection />
       <Calendario /> 
+      <MapSection />
       <VendorDirectory />
       <FlashOffers />
       <ContactSection />
