@@ -76,8 +76,8 @@ export function Calendario() {
               )}
 
               {/* Icono de fondo decorativo más pequeño */}
-              <div className={`absolute ${hasImage ? 'top-28' : 'top-2'} -right-2 opacity-5 rotate-12 pointer-events-none transition-transform duration-500 group-hover:-translate-y-2`}>
-                {getEventoIcon(ev.tipo)}
+              <div className={`absolute ${hasImage ? 'top-40' : 'top-4'} -right-2 opacity-10 rotate-12 pointer-events-none transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-110`}>
+                {getEventoIcon(ev.tipo)} 
               </div>
 
               {/* 2. SECCIÓN CONTENIDO (Este div crece para empujar el footer) */}
