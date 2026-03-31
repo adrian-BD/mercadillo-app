@@ -32,12 +32,22 @@ export function Hero() {
   }, []);
 
   return (
+    /* Mantenemos tu degradado original como base */
     <div className="relative bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E3A8A] text-white overflow-hidden">
-      {/* Fondo decorativo sutil */}
-      <div className="absolute inset-0 bg-white/5 opacity-20 pointer-events-none"></div>
+      
+      {/* IMAGEN DE FONDO SUTIL: Con opacidad baja para que no mate el degradado azul */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/gente3.png" 
+          alt="" 
+          className="w-full h-full object-cover opacity-15 mix-blend-overlay"
+        />
+      </div>
 
-      {/* He reducido el padding vertical de py-20/28 a py-12/16 para quitar espacio vacío */}
-      <div className="relative px-6 py-12 md:py-16 max-w-7xl mx-auto">
+      {/* Tu fondo decorativo de puntos/blanco que ya tenías */}
+      <div className="absolute inset-0 bg-white/5 opacity-20 pointer-events-none z-10"></div>
+
+      <div className="relative z-20 px-6 py-12 md:py-16 max-w-7xl mx-auto">
         <div className="text-center space-y-10">
           
           {/* Badge Dinámico Superior */}
@@ -100,8 +110,6 @@ export function Hero() {
               "Rastro, Gastronomía y Tesoros a un paso de la playa"
             </p>
           </div>
-
-          {/* HE ELIMINADO EL BLOQUE "Info Footer Minimalista" AQUÍ */}
 
         </div>
       </div>
