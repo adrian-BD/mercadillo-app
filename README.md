@@ -29,9 +29,11 @@ npm run dev
 
 ## Producción
 
-```bash
-npm run build
-```
+git add .
+
+git commit -m "feat: cards del calendario mas compactas y footer alineado"
+
+git push origin main
 
 ## Paleta de Colores
 

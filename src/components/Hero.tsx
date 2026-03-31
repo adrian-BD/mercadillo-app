@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabase';
+import { Star } from 'lucide-react';
 
 export function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,60 +33,84 @@ export function Hero() {
 
   return (
     <div className="relative bg-gradient-to-br from-[#1E3A8A] via-[#2563EB] to-[#1E3A8A] text-white overflow-hidden">
-      {/* Fondo decorativo */}
-      <div className="absolute inset-0 bg- opacity-20"></div>
+      {/* Fondo decorativo sutil */}
+      <div className="absolute inset-0 bg-white/5 opacity-20 pointer-events-none"></div>
 
-      <div className="relative px-6 py-16 max-w-6xl mx-auto">
-        <div className="text-center space-y-8">
+      <div className="relative px-6 py-20 md:py-28 max-w-7xl mx-auto">
+        <div className="text-center space-y-12">
           
-          {/* Badge Dinámico */}
+          {/* Badge Dinámico Superior */}
           <div className="inline-block">
             {activeEvent?.tipo === 'aviso' ? (
-              <span className="inline-flex items-center gap-2 bg-amber-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-bounce">
+              <span className="inline-flex items-center gap-2 bg-amber-500 text-white px-6 py-2 rounded-full text-xs font-black shadow-xl animate-bounce uppercase tracking-widest">
                 ⚠️ AVISO: {activeEvent.titulo}
               </span>
             ) : isOpen ? (
-              <span className="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+              <span className="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-2 rounded-full text-xs font-black shadow-xl uppercase tracking-widest">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                ¡Estamos abiertos!
+                ¡Estamos abiertos ahora!
               </span>
             ) : (
-              <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold border border-white/30">
-                🗓️ Te esperamos el próximo domingo
+              <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-6 py-2 rounded-full text-xs font-bold border border-white/20 uppercase tracking-widest">
+                🗓️ Próxima cita: Domingo 08:00h
               </span>
             )}
           </div>
 
-          {/* Título y Descripción */}
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
-              Mercadillo <span className="text-[#E2725B]">Muchavista</span>
-            </h1>
+          {/* Bloque Central: Logo (Borde Naranja) y Título GIGANTE */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
             
-            <div className="space-y-2">
-              <p className="text-lg md:text-2xl text-white/90 max-w-2xl mx-auto font-medium leading-relaxed">
-                Rastro, Gastronomía y Tesoros a un paso de la playa
-              </p>
+            {/* LOGO con Borde Naranja y Estrellita Blanca */}
+            <div className="relative flex-shrink-0 group">
+              {/* Halo de luz naranja suave detrás */}
+              <div className="absolute inset-0 bg-[#E2725B]/20 blur-3xl rounded-full scale-150 group-hover:bg-[#E2725B]/30 transition-all duration-700"></div>
               
-              {/* Dirección con aspecto de "Tag" minimalista */}
-              <div className="flex items-center justify-center gap-3">
-                <div className="h-[1px] w-4 bg-[#E2725B]/40"></div>
-                <p className="text-xs md:text-sm text-[#E2725B] font-bold uppercase tracking-[0.3em]">
-                  Av. Elda, 17 · Sant Joan d'Alacant
+              <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-[4px] border-[#E2725B] shadow-2xl bg-white/10 backdrop-blur-sm p-1 transition-transform duration-500 group-hover:scale-105">
+                <img 
+                  src="/mercadillo.png" 
+                  alt="Mercadillo Muchavista"
+                  className="w-full h-full object-cover scale-105" 
+                />
+              </div>
+              
+              {/* Estrellita decorativa blanca sobre borde naranja */}
+              <div className="absolute bottom-3 right-3 bg-white text-[#E2725B] p-1.5 rounded-full shadow-lg border-2 border-[#E2725B] z-10">
+                <Star size={12} fill="currentColor" />
+              </div>
+            </div>
+
+            {/* Título Masivo */}
+            <div className="flex flex-col text-center md:text-left">
+              <h1 className="text-6xl md:text-[7.5rem] font-black leading-[0.75] tracking-tighter uppercase italic drop-shadow-2xl">
+                <span className="text-white block">Mercadillo</span>
+                <span className="text-[#E2725B] block -mt-2">Muchavista</span>
+              </h1>
+              
+              <div className="flex items-center justify-center md:justify-start gap-4 mt-8">
+                <div className="h-[3px] w-12 bg-[#E2725B]"></div>
+                <p className="text-white/80 font-black text-xs md:text-sm uppercase tracking-[0.6em]">
+                  Sant Joan d'Alacant
                 </p>
-                <div className="h-[1px] w-4 bg-[#E2725B]/40"></div>
               </div>
             </div>
           </div>
 
+          {/* Descripción Inferior */}
+          <div className="pt-4">
+            <p className="text-xl md:text-3xl text-white/90 max-w-3xl mx-auto font-medium italic leading-tight">
+              "Rastro, Gastronomía y Tesoros a un paso de la playa"
+            </p>
+          </div>
 
-          {/* Info Footer */}
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-8 text-xs font-bold uppercase tracking-widest text-white/60">
-            <div className="flex items-center gap-2">
-              <span className="text-[#E2725B]">●</span> Domingos 8:00 - 14:30
+          {/* Info Footer Minimalista */}
+          <div className="pt-8 flex flex-wrap items-center justify-center gap-12 text-[10px] font-black uppercase tracking-[0.3em] text-white/40">
+            <div className="flex items-center gap-3">
+              <div className="w-1.5 h-1.5 bg-[#E2725B] rounded-full"></div>
+              <span>Domingos 8:00 - 14:30</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-[#E2725B]">●</span> Muchavista, Sant Joan
+            <div className="flex items-center gap-3">
+              <div className="w-1.5 h-1.5 bg-[#E2725B] rounded-full"></div>
+              <span>Playa de Muchavista</span>
             </div>
           </div>
 
