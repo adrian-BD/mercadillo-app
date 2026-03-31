@@ -15,17 +15,16 @@ const categoryColors: Record<string, string> = {
 
 const vendorImages: Record<string, string> = {
   'Pollos Asados El Domingo': 'https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=800',
-  'Churros La Playa': 'https://images.pexels.com/photos/36361401/pexels-photo-36361401.jpeg?_gl=1*1u3y28x*_ga*MTc4MTczNDUyOC4xNzc0OTUxNDgx*_ga_8JE65Q40S6*czE3NzQ5NTE0ODEkbzEkZzEkdDE3NzQ5NTE2MTIkajYkbDAkaDA.=800',
+  'Churreria El Churry': '/churro.png?auto=compress&cs=tinysrgb&w=800',
   'Frankfurt Alemán': 'https://images.pexels.com/photos/31869578/pexels-photo-31869578.jpeg?_gl=1*177inx3*_ga*MTc4MTczNDUyOC4xNzc0OTUxNDgx*_ga_8JE65Q40S6*czE3NzQ5NTE0ODEkbzEkZzEkdDE3NzQ5NTE2OTkkajUzJGwwJGgw=800',
   'Antigüedades El Rastro': 'https://images.pexels.com/photos/33512943/pexels-photo-33512943.jpeg?_gl=1*1lyirpz*_ga*MTc4MTczNDUyOC4xNzc0OTUxNDgx*_ga_8JE65Q40S6*czE3NzQ5NTE0ODEkbzEkZzEkdDE3NzQ5NTE1NTkkajU5JGwwJGgw=800',
   'Frutas del Levante': 'https://images.pexels.com/photos/30599548/pexels-photo-30599548.jpeg?_gl=1*z8pgp9*_ga*MTc4MTczNDUyOC4xNzc0OTUxNDgx*_ga_8JE65Q40S6*czE3NzQ5NTE0ODEkbzEkZzEkdDE3NzQ5NTE0OTAkajUxJGwwJGgw=800',
-  'Moda Outlet': 'https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=800',
   'Café Vista al Mar': 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=800',
   'Quesos Artesanos': 'https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&w=800',
 };
 
 export function VendorCard({ vendor }: VendorCardProps) {
-  const imageUrl = vendorImages[vendor.name] || vendor.image_url || 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=800';
+  const imageUrl = vendorImages[vendor.name] || vendor.image_url || '/mercadillo.png';
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(`Hola, estoy interesado en ${vendor.name} del Mercadillo de Muchavista`);

@@ -36,8 +36,9 @@ export function Hero() {
       {/* Fondo decorativo sutil */}
       <div className="absolute inset-0 bg-white/5 opacity-20 pointer-events-none"></div>
 
-      <div className="relative px-6 py-20 md:py-28 max-w-7xl mx-auto">
-        <div className="text-center space-y-12">
+      {/* He reducido el padding vertical de py-20/28 a py-12/16 para quitar espacio vacío */}
+      <div className="relative px-6 py-12 md:py-16 max-w-7xl mx-auto">
+        <div className="text-center space-y-10">
           
           {/* Badge Dinámico Superior */}
           <div className="inline-block">
@@ -57,12 +58,11 @@ export function Hero() {
             )}
           </div>
 
-          {/* Bloque Central: Logo (Borde Naranja) y Título GIGANTE */}
+          {/* Bloque Central: Logo y Título GIGANTE */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
             
-            {/* LOGO con Borde Naranja y Estrellita Blanca */}
+            {/* LOGO con Borde Naranja */}
             <div className="relative flex-shrink-0 group">
-              {/* Halo de luz naranja suave detrás */}
               <div className="absolute inset-0 bg-[#E2725B]/20 blur-3xl rounded-full scale-150 group-hover:bg-[#E2725B]/30 transition-all duration-700"></div>
               
               <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-[4px] border-[#E2725B] shadow-2xl bg-white/10 backdrop-blur-sm p-1 transition-transform duration-500 group-hover:scale-105">
@@ -73,7 +73,6 @@ export function Hero() {
                 />
               </div>
               
-              {/* Estrellita decorativa blanca sobre borde naranja */}
               <div className="absolute bottom-3 right-3 bg-white text-[#E2725B] p-1.5 rounded-full shadow-lg border-2 border-[#E2725B] z-10">
                 <Star size={12} fill="currentColor" />
               </div>
@@ -102,17 +101,7 @@ export function Hero() {
             </p>
           </div>
 
-          {/* Info Footer Minimalista */}
-          <div className="pt-8 flex flex-wrap items-center justify-center gap-12 text-[10px] font-black uppercase tracking-[0.3em] text-white/40">
-            <div className="flex items-center gap-3">
-              <div className="w-1.5 h-1.5 bg-[#E2725B] rounded-full"></div>
-              <span>Domingos 8:00 - 14:30</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-1.5 h-1.5 bg-[#E2725B] rounded-full"></div>
-              <span>Playa de Muchavista</span>
-            </div>
-          </div>
+          {/* HE ELIMINADO EL BLOQUE "Info Footer Minimalista" AQUÍ */}
 
         </div>
       </div>

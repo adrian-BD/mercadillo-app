@@ -6,7 +6,7 @@ export function MapSection() {
   const [showPlanoModal, setShowPlanoModal] = useState(false);
 
 
-  const embedUrl = "https://www.google.com";
+  const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.1653948701755!2d-0.42156742356564014!3d38.391424676399346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6239b560b0bf65%3A0x311fae52bc27cb40!2sMercadillo%20muchavista%20s%20l!5e0!3m2!1ses!2ses!4v1774971754399!5m2!1ses!2ses";
 
   return (
     <section id="mapa" className="py-16 px-6 bg-[#F9F8F6]">
