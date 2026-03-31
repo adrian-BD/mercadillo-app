@@ -24,7 +24,7 @@ export function ContactSection() {
                 <Phone className="w-6 h-6 text-[#E2725B] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-1">Teléfono</h3>
-                  <p className="text-white/80">+34 674 37 42 08</p>
+                  <p className="text-white/80">+34 123 12 12 12</p>
                 </div>
               </div>
 
@@ -32,7 +32,7 @@ export function ContactSection() {
                 <Mail className="w-6 h-6 text-[#E2725B] flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-white/80">info@mercadillomuchavista.com</p>
+                  <p className="text-white/80">adriandigital2026@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export function ContactSection() {
                 Si estás interesado en vender en nuestro mercadillo, contáctanos para más información sobre disponibilidad y precios.
               </p>
               <a
-                href="mailto:info@mercadillomuchavista.com"
+                href="mailto:adriandigital2026@gmail.com"
                 className="inline-block bg-white text-[#E2725B] px-6 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors"
               >
                 Solicitar Información
@@ -86,9 +86,33 @@ export function ContactSection() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
-          <p>© 2024 Mercadillo de Muchavista. Todos los derechos reservados.</p>
+
+          <div className="mt-12 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+             <p>© 2026 Mercadillo de Muchavista. Todos los derechos reservados.</p>
+          
+           <p className=" text-sm flex flex-col md:flex-row items-center justify-center gap-1">
+            <span>
+              Diseño y Desarrollo por <span>Adrian Digital 2026</span>
+            </span>
+            <span className="hidden md:inline text-gray-700">•</span>
+            <span>
+              ¿Quieres tu propia web?{' '}
+              <a 
+                href="mailto:adriandigital2026@gmail.com" 
+                className="text-[#ffd000] hover:text-white transition-colors duration-300 underline underline-offset-4 decoration-[#ffd000]/30 hover:decoration-white"
+              >
+                Contáctame
+              </a>
+            </span>
+          </p>
+          </div>
         </div>
+
+
+
+
+
       </div>
     </section>
   );
