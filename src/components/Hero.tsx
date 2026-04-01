@@ -38,7 +38,7 @@ export function Hero() {
       {/* IMAGEN DE FONDO SUTIL: Con opacidad baja para que no mate el degradado azul */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/gente3.png" 
+          src="/gente4.jpg" 
           alt="" 
           className="w-full h-full object-cover opacity-15 mix-blend-overlay"
         />
