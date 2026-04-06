@@ -97,7 +97,7 @@ export function ContactSection() {
             
             <p className="flex flex-col md:flex-row items-center justify-center gap-1">
               <span>
-                Diseño por <span className="text-white/60">Adrian Digital 2026</span>
+                Diseño por <span className="text-white/60">digitALC</span>
               </span>
               <span className="hidden md:inline opacity-30">•</span>
               <span>
