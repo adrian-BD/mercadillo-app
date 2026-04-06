@@ -7,7 +7,7 @@ import { FlashOffers } from './components/FlashOffers';
 import { ContactSection } from './components/ContactSection';
 import { BottomNav } from './components/BottomNav';
 import { AdminPanel } from './components/AdminPanel';
-import { Plus } from 'lucide-react';
+//import { Plus } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -26,6 +26,7 @@ function App() {
 
       <BottomNav activeSection={activeSection} onNavigate={setActiveSection} />
 
+      {/*
       <button
         onClick={() => setShowAdminPanel(true)}
         className="fixed bottom-24 right-6 bg-[#E2725B] hover:bg-[#d66550] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110 z-40"
@@ -33,7 +34,7 @@ function App() {
       >
         <Plus className="w-6 h-6" />
       </button>
-
+ ... */}
       <AdminPanel isOpen={showAdminPanel} onClose={() => setShowAdminPanel(false)} />
     </div>
   );

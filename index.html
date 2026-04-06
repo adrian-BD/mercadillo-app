@@ -3,28 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" sizes="32x32" href="/logo-mercadillo-modified.png">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#1E3A8A" />
+    <meta name="theme-color" content="#C2410C" />
+    
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Muchavista" />
+    <meta name="apple-mobile-web-app-title" content="Mercadillo Muchavista" />
 
-    <title>Mercadillo de Muchavista - Sant Joan d'Alacant</title>
-    <meta name="description" content="Tu Domingo Perfecto en Muchavista. Rastro, Gastronomía y Tesoros a un paso de la playa. Cada domingo de 8:00 a 14:30." />
+    <!-- 🔥 TITLE OPTIMIZADO -->
+    <title>Mercadillo Muchavista en Alicante | Domingo en Sant Joan d'Alacant</title>
+
+    <!-- 🔥 META DESCRIPTION -->
+    <meta name="description" content="Mercadillo Muchavista en Alicante todos los domingos de 8:00 a 14:30 en Sant Joan d'Alacant. Rastro, comida y productos locales cerca de la playa." />
+
+    <!-- 🔥 CANONICAL -->
+    <link rel="canonical" href="https://muchavistamercadillotest.vercel.app/" />
 
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/icon-192.png" />
 
-    <meta property="og:title" content="Mercadillo de Muchavista | El Mercadillo Oficial del Domingo" />
-    <meta property="og:description" content="Ven a disfrutar del Mercadillo de Muchavista cada domingo de 8:00 a 14:30 en Sant Joan d'Alacant. ¡Moda, artesanía y productos frescos te esperan!" />
+    <!-- 🔥 OPEN GRAPH -->
+    <meta property="og:title" content="Mercadillo Muchavista | Mercadillo del Domingo en Alicante" />
+    <meta property="og:description" content="Rastro, gastronomía y productos locales cada domingo en Muchavista. Vive el ambiente del mercadillo más auténtico de Alicante." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/puesto.jpg" />
+    <meta property="og:image" content="https://muchavistamercadillotest.vercel.app/gente.png" />
+    <meta property="og:url" content="https://muchavistamercadillotest.vercel.app/" />
 
+    <!-- 🔥 TWITTER -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mercadillo de Muchavista" />
-    <meta name="twitter:description" content="Tu Domingo Perfecto en Muchavista" />
-    <meta name="twitter:image" content="https://images.pexels.com/photos/9192276/pexels-photo-9192276.jpeg?_gl=1*mb58wh*_ga*MTc4MTczNDUyOC4xNzc0OTUxNDgx*_ga_8JE65Q40S6*czE3NzUwMjk1MTckbzYkZzEkdDE3NzUwMjk1ODQkajYwJGwwJGgw?auto=compress&cs=tinysrgb&w=1200" />
+    <meta name="twitter:title" content="Mercadillo Muchavista" />
+    <meta name="twitter:description" content="Tu domingo en Muchavista empieza aquí" />
+    <meta name="twitter:image" content="https://muchavistamercadillotest.vercel.app/gente.png" />
+
+    <!-- 🔥 LOCAL BUSINESS (SEO LOCAL OPTIMIZADO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Market",
+        "@id": "https://muchavistamercadillotest.vercel.app/#mercadillo",
+        "name": "Mercadillo Muchavista",
+        "description": "Mercadillo semanal en Muchavista con rastro, gastronomía y productos locales cada domingo.",
+        "image": "https://muchavistamercadillotest.vercel.app/gente.png",
+        "url": "https://muchavistamercadillotest.vercel.app/",
+        "telephone": "+34 674 374 208",
+        "priceRange": "€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Carrer del Mercat, s/n",
+          "addressLocality": "Sant Joan d'Alacant",
+          "addressRegion": "Alicante",
+          "postalCode": "03550",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.3914,
+          "longitude": -0.4190
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Sunday",
+          "opens": "08:00",
+          "closes": "14:30"
+        }],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Sant Joan d'Alacant"
+          },
+          {
+            "@type": "City",
+            "name": "El Campello"
+          }
+        ]
+      }
+    </script>
+
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

@@ -47,6 +47,7 @@ export function ContactSection() {
                 <p className="text-white/80 text-sm break-all">adriandigital2026@gmail.com</p>
               </div>
             </div>
+            {/*
             <div className="flex gap-3">
               <a href="#" className="w-9 h-9 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
                 <Instagram className="w-4 h-4" />
@@ -55,6 +56,7 @@ export function ContactSection() {
                 <Facebook className="w-4 h-4" />
               </a>
             </div>
+             ... */}
           </div>
 
           {/* 3. Horarios */}
