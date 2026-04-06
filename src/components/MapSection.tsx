@@ -33,6 +33,7 @@ export function MapSection() {
               <MapIcon className="w-4 h-4" />
               Ver Plano de Puestos
             </button>
+                
           </div>
 
           <p className="text-gray-600 text-lg">
@@ -63,9 +64,12 @@ export function MapSection() {
               <div className="p-4 text-center">
                 <p className="font-bold text-[#1E3A8A]">Distribución de puestos y sectores</p>
               </div>
+              
             </div>
+            
           </div>
         )}
+        
 
         {/* Tus tarjetas de transporte originales intactas */}
         <div className="mt-12 grid md:grid-cols-3 gap-6">

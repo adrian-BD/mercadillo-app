@@ -4,6 +4,7 @@ import { Calendario } from './components/Calendario';
 import { MapSection } from './components/MapSection';
 import { VendorDirectory } from './components/VendorDirectory';
 import { FlashOffers } from './components/FlashOffers';
+import { Resena } from './components/Resena';
 import { ContactSection } from './components/ContactSection';
 import { BottomNav } from './components/BottomNav';
 import { AdminPanel } from './components/AdminPanel';
@@ -20,8 +21,8 @@ function App() {
       <MapSection />
       <VendorDirectory />
       <FlashOffers />
+      <Resena />
       <ContactSection />
-
       <div className="pb-20"></div>
 
       <BottomNav activeSection={activeSection} onNavigate={setActiveSection} />
