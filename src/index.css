@@ -30,3 +30,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+logo-digitalc-footer {
+    /* Convierte el color a escala de grises y ajusta el brillo */
+    filter: grayscale(100%) brightness(0.6); 
+    width: 24px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    opacity: 0.8; /* Le da un toque más discreto */
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón: recupera su color o se aclara */
+.logo-digitalc-footer:hover {
+    filter: grayscale(0%) brightness(1);
+    opacity: 1;
+}

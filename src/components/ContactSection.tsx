@@ -91,26 +91,31 @@ export function ContactSection() {
         </div>
 
         {/* FOOTER */}
-        <div className="pt-8 border-t border-white/10 text-center text-white/40 text-xs">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p>© 2026 Mercadillo de Muchavista. Todos los derechos reservados.</p>
-            
-            <p className="flex flex-col md:flex-row items-center justify-center gap-1">
-              <span>
-                Diseño por <span className="text-white/60">digitALC</span>
-              </span>
-              <span className="hidden md:inline opacity-30">•</span>
-              <span>
-                <a 
-                  href="mailto:adriandigital2026@gmail.com" 
-                  className="text-[#E2725B] hover:text-white transition-colors duration-300 underline underline-offset-4 decoration-[#E2725B]/20"
-                >
-                  ¿Quieres tu propia web?
-                </a>
-              </span>
-            </p>
-          </div>
-        </div>
+<div className="pt-8 border-t border-white/10 text-center text-white/40 text-xs">
+  <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+    <p>© 2026 Mercadillo de Muchavista. Todos los derechos reservados.</p>
+    
+    <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+      {/* Sección de Créditos con Logo */}
+      <div className="flex items-center gap-2 group">
+        
+        <span>
+          Diseño y Desarrollo por <span className="text-white/70 font-medium group-hover:text-white transition-colors">digitALC</span>
+        </span>
+      </div>
+
+      <span className="hidden md:inline opacity-20">|</span>
+
+      {/* CTA de Contacto */}
+      <a 
+        href="mailto:adriandigital2026@gmail.com" 
+        className="text-[#E2725B] hover:text-white transition-colors duration-300 underline underline-offset-4 decoration-[#E2725B]/20"
+      >
+        ¿Quieres tu propia web? Hablemos...
+      </a>
+    </div>
+  </div>
+</div>
 
       </div>
     </section>
